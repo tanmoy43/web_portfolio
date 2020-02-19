@@ -1,19 +1,99 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+} */
+a{
+    text-decoration: none;
+}
 body{
+    margin: 0;
     font-family: 'Poppins', sans-serif;
 }
 h1{
     font-size: 50px;
 }
-
-.first-section .half{
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 20px;
+}
+section{
+    height: 500px;
+    margin-bottom: 150px;
+}
+.first-section{
+    background-image: url(../images/top-banner.png);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+.first-section .name-highlights, .text-highlights{
+    color: orange;
+}
+.link{
+    background-image: linear-gradient(45deg, lightsalmon 40%, tomato 100%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+}
+.link:hover{
+    background-image: linear-gradient(45deg, tomato 40%, lightsalmon 100%);
+    box-shadow: 0 0 50px 0 rgba(46, 51, 59, 0.452);
+    transition: 650ms all ease-in-out;
+}
+.half{
     width: 40%;
     float: left;
     margin-left: 5%;
     padding-left: 2%;
 }
-.first-section .name-highlights{
-    color: orange;
-}
-.first-section .half img{
+.first-section .half img, .second-section .half img{
     width: 100%;
+    margin-top: 15px;
+}
+.second-section{
+    margin-top: 10px;
+    background-image: url("../images/dream-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.second-section .link{
+    background-image: linear-gradient(45deg, rgb(255, 196, 0) 30%, tomato 100%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+}
+.experience-one, .experience-two{
+    box-shadow: 10px 10px 15px grey;
+    border-radius: 5px;
+}
+.experience-one:hover, .experience-two:hover{
+    box-shadow: 10px 10px 40px grey;
+    transition: .3s all linear;
+}
+.experience{
+    background-image: url(../images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+#stack{
+    border-left: 7px solid;
+    border-image: linear-gradient(45deg, lightsalmon 40%, tomato 100%); 
+    border-image-slice: 1;
+}
+#stack-two{
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, blue 40%, cyan 100%); 
+    border-image-slice: 1;
+}
+footer p{
+    text-align: center;
+    color: gray;
 }
